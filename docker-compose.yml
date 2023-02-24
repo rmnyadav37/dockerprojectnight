@@ -1,0 +1,14 @@
+version: "3"
+services:
+  ashish-con:
+    image: "nginx:latest"
+    ports:
+      - "90:80"
+  paws-con:
+    image: "jenkins/jenkins"
+    ports:
+      - "8080:8080"
+  raman-con:
+    image: "ubuntu"
+    ports: 
+      - "91:80"
